@@ -1,0 +1,38 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.layout.FlowPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.RegisterController"
+            prefHeight="400.0" prefWidth="640.0">
+
+
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <MenuBar accessibleText="LALALALA" VBox.vgrow="NEVER" />
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="341.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="75.0" layoutY="127.0" text="Naam:" />
+            <Label layoutX="76.0" layoutY="170.0" text="Email:" />
+            <Label layoutX="40.0" layoutY="211.0" text="Wachtwoord:" />
+            <TextField fx:id="Txtname" layoutX="117.0" layoutY="122.0" prefHeight="25.0" prefWidth="498.0" />
+            <TextField fx:id="Txtmail" layoutX="117.0" layoutY="165.0" prefHeight="25.0" prefWidth="498.0" />
+            <TextField fx:id="Txtpassword" layoutX="117.0" layoutY="207.0" prefHeight="25.0" prefWidth="498.0" />
+            <Label layoutX="259.0" layoutY="70.0" text="Registratie">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Button fx:id="Btnregister" layoutX="265.0" layoutY="282.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="110.0" text="Registreer" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
+</AnchorPane>
