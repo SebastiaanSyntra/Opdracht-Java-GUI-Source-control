@@ -30,7 +30,7 @@
                   <Font size="26.0" />
                </font>
             </Label>
-            <Button fx:id="Btnregister" layoutX="265.0" layoutY="282.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="110.0" text="Registreer" />
+            <Button fx:id="Btnregister" layoutX="265.0" layoutY="282.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="110.0" text="Registreer" onAction="#ClickRegister" />
       </children>
     </AnchorPane>
   </children>

@@ -19,6 +19,31 @@ public class RegisterController {
     private TextField Txtpassword;
     @FXML
     private Button Btnregister;
+    @FXML
+    Alert alertError = new Alert(Alert.AlertType.ERROR);
+    private String alertMessage ="";
 
 
+    public void ClickRegister(ActionEvent actionEvent) {
+
+        if(Txtmail.getText().isEmpty() || Txtname.getText().isEmpty() || Txtpassword.getText().isEmpty()){
+            if(Txtname.getText().isEmpty()){
+                alertMessage += "Naam is niet ingevuld \n";
+            }
+            if(Txtmail.getText().isEmpty()){
+                alertMessage += "Mail is niet ingevuld \n";
+            }
+            if(Txtpassword.getText().isEmpty()){
+                alertMessage += "Wachtwoord is niet ingevuld \n";
+            }
+
+            alertError.setContentText(alertMessage);
+            alertError.show();
+
+
+        }
+        alertMessage = "";
+
+
+}
 }
